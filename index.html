@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./assets/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- Site header -->
+    <div class="content">
+        <header>
+            <h1>Create your burger</h1>
+        </header>
+        <!-- /Site header -->
+        <!-- /Site main -->
+        <main>
+            <input type="text" placeholder="Name your burger">
+            <div class="ingredients d-flex">
+                <div class="first_col">
+                    <div class="form_group">
+                        <img src="./assets/img/cheese.svg" alt="">
+                        <label for="Cheese">Cheese</label>
+                        <input type="checkbox" name="cheese" id="cheese">
+                    </div>
+                    <div class="form_group">
+                        <img src="./assets/img/fried-egg.svg" alt="">
+                        <label for="Cheese">Egg</label>
+                        <input type="checkbox" name="egg" id="egg">
+                    </div>
+                    <div class="form_group">
+                        <img src="./assets/img/mustard.svg" alt="">
+                        <label for="Cheese">Mustard</label>
+                        <input type="checkbox" name="mustard" id="mustard">
+                    </div>
+                </div>
+                <div class="first_col">
+                    <div class="form_group">
+                        <img src="./assets/img/tomato.svg" alt="">
+                        <label for="Cheese">Tomato</label>
+                        <input type="checkbox" name="tomato" id="tomato">
+                    </div>
+                    <div class="form_group">
+                        <img src="./assets/img/lettuce.svg" alt="">
+                        <label for="Lettuce">Lettuce</label>
+                        <input type="checkbox" name="lettuce" id="lettuce">
+                    </div>
+                    <div class="form_group">
+                        <img src="./assets/img/ketchup.svg" alt="">
+                        <label for="ketchup">Mustard</label>
+                        <input type="checkbox" name="ketcup" id="ketchup">
+                    </div>
+                </div>
+            </div>
+            <div class="discount">
+                <span>Discount coupon</span>
+                <input type="text">
+            </div>
+            <div class="button d-flex justify-content-center">
+                <button type="button">Calculate</button>
+            </div>
+        </main>
+        <!-- /Site main -->
+        <!-- Site footer -->
+        <footer class="d-flex justify-content-between">
+            <div class="price_text">
+                <h4>Your price</h4>
+            </div>
+            <div class="price_value">
+                <h4 id="price">price</h4>
+            </div>
+        </footer>
+    </div>
+    <!-- /Site footer -->
+    <!-- JavaScript -->
+    <script src="./assets/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+body {
+  background-color: bisque;
+}
+.content {
+  background-color: white;
+  width: 50%;
+}
+header {
+  background-color: orange;
+}
+.ingredients img {
+  width: 50px;
+}
+footer {
+  background-color: darkred;
+  padding: 20px;
+  color: white;
+}
