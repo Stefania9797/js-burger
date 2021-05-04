@@ -14,4 +14,16 @@ bntCalculate.addEventListener("click",function(){
         }
     }
     console.log(burgerPrice);
+    //coupon
+    var coupon = ["ABC123","QWERT543","CIAO987"];
+    //controllare la presenza di coupon
+    var couponValue=document.getElementById("coupon").value;
+    for(var i=0;i<coupon.length;i++){
+    if(couponValue.includes(coupon[i])){
+        burgerPrice=burgerPrice-(burgerPrice*0.20)
+        console.log(burgerPrice);
+    }
+}
+//Stampa prezzo su pagina
+document.getElementById("price").innerHTML=burgerPrice +" €";
 })
