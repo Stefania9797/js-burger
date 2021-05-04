@@ -1,12 +1,45 @@
-body {
-  background-color: bisque;
+header {
+  padding: 30px;
+  position: relative;
+  background: rgba(253, 187, 64, 1);
+}
+header img {
+  width: 150px;
+  position: absolute;
+  top: -10%;
+  left: 90%;
+}
+.form_group {
+  margin-top: 20px;
+}
+.discount input {
+  background-color: antiquewhite;
+  border: none;
+  width: 50%;
+}
+button {
+  border-radius: 20px;
+  font-weight: 900;
+  border: none;
+  padding: 10px 15px;
+  background-color: rgba(253, 187, 64, 1);
 }
 .content {
   background-color: white;
-  width: 50%;
+  width: 40%;
 }
-header {
-  background-color: orange;
+.form_group span {
+  color: red;
+}
+input[type="checkbox"] {
+  filter: hue-rotate(152deg);
+}
+#name_burger {
+  display: inline-block;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-size: 20px;
 }
 .ingredients img {
   width: 50px;

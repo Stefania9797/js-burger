@@ -9,68 +9,97 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
-  <body>
+  <body style="background-color: antiquewhite;">
     <!-- Site header -->
     <div class="content">
         <header>
-            <h1>Create your burger</h1>
+            <h1 class="d-inline-block">Create your burger</h1>
+            <img src="./assets/img/burger-top.png" alt="">
         </header>
         <!-- /Site header -->
         <!-- /Site main -->
         <main>
-            <input type="text" placeholder="Name your burger">
+            <input type="text" id="name_burger" class="ml-5 mt-4" placeholder="Name your burger">
             <div class="ingredients d-flex">
-                <div class="first_col">
+                <!-- Ingredienti -->
+                <div class="first_col m-3 ml-5 mr-5">
+                    <!-- prima colonna -->
                     <div class="form_group">
+                        <!-- cheese -->
                         <img src="./assets/img/cheese.svg" alt="">
                         <label for="Cheese">Cheese</label>
                         <input type="checkbox" name="cheese" id="cheese" data-price="1">
+                        <span>add</span>
+                        <!-- /cheese -->
                     </div>
                     <div class="form_group">
+                        <!-- egg -->
                         <img src="./assets/img/fried-egg.svg" alt="">
                         <label for="Cheese">Egg</label>
                         <input type="checkbox" name="egg" id="egg" data-price="1">
+                        <span>add</span>
+                        <!-- /egg -->
                     </div>
                     <div class="form_group">
+                        <!-- mustard -->
                         <img src="./assets/img/mustard.svg" alt="">
                         <label for="Cheese">Mustard</label>
                         <input type="checkbox" name="mustard" id="mustard"data-price="0.50">
+                        <span>add</span>
+                        <!-- /mustard -->
                     </div>
+                    <!-- /prima colonna -->
                 </div>
-                <div class="first_col">
+                <div class="second_col m-3 ml-5">
                     <div class="form_group">
+                        <!-- tomato -->
                         <img src="./assets/img/tomato.svg" alt="">
                         <label for="Cheese">Tomato</label>
                         <input type="checkbox" name="tomato" id="tomato"data-price="1">
+                        <span>add</span>
+                        <!-- tomato -->
                     </div>
                     <div class="form_group">
+                        <!-- lettuce -->
                         <img src="./assets/img/lettuce.svg" alt="">
                         <label for="Lettuce">Lettuce</label>
                         <input type="checkbox" name="lettuce" id="lettuce" data-price="0.50">
+                        <span>add</span>
+                        <!-- /lettuce -->
                     </div>
                     <div class="form_group">
+                        <!-- ketchup -->
                         <img src="./assets/img/ketchup.svg" alt="">
                         <label for="ketchup">Ketchup</label>
                         <input type="checkbox" name="ketcup" id="ketchup"data-price="0.50">
+                        <span>add</span>
+                        <!-- /ketchup -->
                     </div>
                 </div>
             </div>
-            <div class="discount">
+                <!-- /Ingredienti -->
+            <div class="discount ml-5 mt-3">
+                <!-- coupon -->
                 <span>Discount coupon</span>
                 <input type="text" id="coupon">
             </div>
+            <!-- /coupon -->
+            <!-- calculate -->
             <div class="button d-flex justify-content-center">
-                <button type="button">Calculate</button>
+                <button type="button" class="mt-5 mb-4">Calculate</button>
             </div>
+            <!-- calculate -->
         </main>
         <!-- /Site main -->
         <!-- Site footer -->
         <footer class="d-flex justify-content-between">
             <div class="price_text">
+                <!-- prezzo burger -->
                 <h4>Your price</h4>
             </div>
             <div class="price_value">
                 <h4 id="price"></h4>
+                <!-- /prezzo burger -->
             </div>
         </footer>
     </div>
