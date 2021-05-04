@@ -6,7 +6,6 @@ bntCalculate.addEventListener("click",function(){
     console.log(burgerPrice);
     //aggiungere ingredienti
     var checkmark=document.querySelectorAll("input[type=checkbox]");
-    console.log(checkmark);
     for(var i=0;i<checkmark.length;i++){
         var ingredient=checkmark[i]
         if(ingredient.checked){
